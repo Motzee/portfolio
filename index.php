@@ -139,7 +139,8 @@ foreach($projets as $projet) {
         $description = $listeProjets[$projet]['description'] ;
         $apercu = $listeProjets[$projet]['apercu'] != null ? $projet."/".$listeProjets[$projet]['apercu'] : "vignette_default.jpg" ;
         $langages = $listeProjets[$projet]['langages'] ;
-        $technos = $listeProjets[$projet]['technos'] ;    
+        $technos = $listeProjets[$projet]['technos'] ; 
+        if(isset($listeProjets[$projet]['lien'])) {$lien = $listeProjets[$projet]['lien'] ;}
 ?>
     <article role="article" id="<?php
                 echo 'details-projet'.$compteurID ;
@@ -154,7 +155,9 @@ foreach($projets as $projet) {
             <p><span class="label">Présentation :</span> <?php echo $description ;?></p>
             <p><span class="label">Langages :</span> <?php echo $langages ;?></p>
             <p><span class="label">Technos :</span> <?php echo $technos ;?></p>
-            <p class="atom_center"><a class="btn_projet" href="<?php echo $projet."/" ;?>" title="lien vers le site de <?php echo $titre ;?>">Visiter <?php echo $titre ;?></a></p>
+            <p class="atom_center"><a class="btn_projet" href="<?php
+            echo isset($lien) ? $lien : $projet."/" ;
+            ?>" title="lien vers le site de <?php echo $titre ;?>">Visiter <?php echo $titre ;?></a></p>
         </section>
     </article>
 
