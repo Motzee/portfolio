@@ -1,0 +1,283 @@
+* {
+    box-sizing : border-box ;
+}
+
+body {
+    margin : 0 ;
+    padding : 0 ;
+    font-family : sans-serif ;
+}
+
+
+/*Header*/
+
+header {
+    min-height : 100vh ;
+    display : flex ;
+    flex-wrap : wrap ;
+    background: linear-gradient(135deg,hsl(192, 16%, 94%) 50%, transparent 50%, transparent), linear-gradient(-135deg,hsl(192, 16%, 94%) 50%, transparent 50%, transparent);
+    background-size : 200px 200px ;
+
+}
+
+header > div {
+    background : hsl(280, 60%, 23%) ;
+    width : 100% ;
+}
+
+header > section {
+    width : 50% ;
+}
+
+h1 {
+    margin-top : 0 ;
+    padding-top : 2rem ;
+    color : white ;
+    text-align : center ;
+    text-shadow : 0 2px 4px black ;
+}
+
+h2 {
+    text-align : center ;
+}
+
+.img-ref {
+    height : 50px ;
+}
+
+
+#presentation {
+    display : flex ;
+    flex-wrap : wrap ;
+    align-items : center ;
+}
+
+#presentation>div {
+    flex-grow : 1 ;
+    text-align : center ;
+}
+
+#pict {
+    margin : 25px ;
+    perspective : 600px ;
+}
+
+#pict img {
+    width: 150px;
+    height: 150px;
+    transition: 2s;
+    backface-visibility: hidden;
+    box-shadow: 2px 2px 0 grey ; 
+}
+
+.recto {
+    z-index: 100;
+}
+
+.recto:active {
+    transform: rotateY(360deg);
+}
+
+.verso {
+    z-index: 50;
+    transform: rotateY(-180deg); 
+    margin-left : -150px ;
+}
+
+.recto:active + .verso
+{
+    transform: rotateY(180deg);
+}
+
+#intitule {
+    color : hsl(192, 16%, 94%) ;
+    font-size : 1.2rem ;
+}
+
+
+/*Langages et Technos*/
+img.bonnemaitrise {
+    height : 125px ;
+}
+img.connait {
+    height : 100px ;
+}
+img.notions {
+    height : 75px ;
+}
+
+
+/*Listing Projets*/
+
+main {
+    min-height : 100vh ;
+    max-width : 100% ;
+    background: linear-gradient(45deg,hsl(192, 16%, 94%) 50%, transparent 50%, transparent), linear-gradient(-45deg,hsl(192, 16%, 94%) 50%, transparent 50%, transparent);
+    background-size : 200px 200px ;
+}
+
+nav#portfolio {
+    background : hsl(250, 33%, 49%) ;
+    padding-bottom : 2rem ;
+}
+
+nav > ul {
+	list-style : none ;
+	margin : 0 ;
+	padding : 0;
+	display : flex ;
+	align-items : center ;
+	text-align : center ;
+	overflow-x : auto ;
+}
+nav > h2 {padding-top : 2rem ;}
+
+nav li > a {
+	text-decoration : none ;
+	font-weight : bold ;
+	font-size : 1.2rem ;
+	color : hsl(192, 16%, 94%) ;
+}
+
+nav#portfolio li > a > img {
+	width : 150px ;
+	height : 125px ;
+	border : 3px solid hsl(180, 4%, 5%) ;
+	transition : border-radius 0.25s linear ;	
+	display : block ;
+}
+
+nav#portfolio li > a:hover > img {
+	border-radius : 20px ;
+	transition : border-radius 0.25s linear ;
+
+}
+
+nav li {
+	margin-left : 2rem ;
+}
+
+nav li:last-child {
+	padding-right : 2rem ;
+}
+
+.inactif {
+    cursor: not-allowed;
+}
+
+.inactif img {
+    border: 1px solid grey;
+    border-radius : 0 ;
+}
+.inactif img:hover {
+    border-radius : 0 ;
+}
+
+
+/*Détails projet*/
+
+article {
+	display : flex ;
+	flex-wrap : wrap ;
+	max-width : 1200px ;
+	justify-content : center ;
+	margin : 1rem auto 1rem auto ;
+}
+
+.explications {
+	background : linear-gradient(to bottom,transparent, hsla(0, 100%, 100%, 0.65) 10%, hsla(0, 100%, 100%, 0.65) 90%, transparent), linear-gradient(to left,transparent, hsla(0, 100%, 100%, 0.65) 10%, hsla(0, 100%, 100%, 0.65) 90%, transparent)  ;
+	min-width : 320px ;
+	max-width : calc(100% - 320px - 2rem) ;
+	padding : 2rem ;
+}
+
+.explications p.atom_center {margin-top : 3rem ;}
+
+aside {
+	border : 3px solid hsl(180, 4%, 5%) ;
+	border-radius : 15px ;
+	width : 320px ;
+	height : 320px ;
+	margin-right : 2rem ;
+}
+
+aside > figure {
+	margin : 0 ;
+	padding : 0 ;
+	width : 100% ;
+	border-radius : 15px ;
+}
+
+aside > figure > img {
+	width : 100% ;
+	border-radius : 15px ;
+}
+
+    .label {
+	font-style : italic ;
+	margin-right : 0.25rem ;
+}
+
+    .btn_projet {
+        background : hsl(250, 33%, 49%) ;
+        color : white ;
+        font-weight : bold ;
+        font-size : 1.5rem ;
+        border-radius : 15px ;
+        padding : 15px ;
+        box-shadow : 2px 2px 2px grey ;
+        text-decoration : none ;
+        margin-top : 2rem ;
+    }
+    
+    .btn_projet:hover, .btn_projet:focus {
+        background : white ;
+        color : hsl(250, 33%, 49%) ;
+        border : 3px solid hsl(250, 33%, 49%) ;
+    }
+    
+    .btn_projet:active {
+        background : lightgrey ;
+        color : hsl(249, 33%, 30%) ;
+        border : 3px solid hsl(250, 33%, 49%) ;
+    }
+
+
+
+/*Horoscope*/
+#astro {
+    margin : 2rem 0 2rem 0;
+
+    text-align : center ;
+}
+
+/*classes atomiques*/
+.atom_center {text-align : center ;}
+
+.atom_centrer {margin : auto ;}
+
+.cache {
+	display : none ;
+}
+
+.visible {
+	display : initial ;
+}
+
+article.visible {
+	display : flex ;
+}
+
+.♥secret {
+    display: none;
+}
+
+/*
+Palette :
+hsl(280, 60%, 23%)
+hsl(250, 33%, 49%)
+hsl(0, 0%, 75%)
+hsl(192, 16%, 94%)
+hsl(180, 4%, 5%)
+
+*/
