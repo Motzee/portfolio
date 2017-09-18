@@ -92,15 +92,12 @@
 		<?php
 		$listeProjetsJSON = file_get_contents('projets.json') ;
 		$listeProjets = json_decode($listeProjetsJSON, true) ;
-
 		//lui faire scanner tout le contenu du dossier
 		$projets = scandir('.') ;
-
 		$compteurClasse = 1 ;
-
 		foreach($projets as $projet) {
 			//si c'est un dossier et si ça ne commence pas par un point (synonyme de fichier caché)
-			if(is_dir($projet) && $projet[0] != '.') {
+			if(is_dir($projet) && $projet[0] != '.'  && $projet != 'nbproject') {
 				$titre = $listeProjets[$projet]['titre'] ;
 				$description = $listeProjets[$projet]['description'] ;
 				$apercu = $listeProjets[$projet]['apercu'] != null ? $projet."/".$listeProjets[$projet]['apercu'] : "vignette_default.jpg" ;
@@ -131,9 +128,8 @@
 	<div>
 	<?php
 $compteurID = 1 ;
-
 foreach($projets as $projet) {
-	if(is_dir($projet) && $projet != '.' && $projet != '..' && $listeProjets[$projet]['dispo'] == true) {
+	if(is_dir($projet) && $projet != '.' && $projet != '..' && $listeProjets[$projet]['dispo'] == true && $projet != 'nbproject') {
         
         $titre = $listeProjets[$projet]['titre'] ;
         $description = $listeProjets[$projet]['description'] ;
@@ -162,6 +158,7 @@ foreach($projets as $projet) {
     </article>
 
 <?php	
+		unset($lien) ;
 		}
 	}
 ?>
