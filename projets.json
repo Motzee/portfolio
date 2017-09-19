@@ -1,0 +1,60 @@
+{
+    "cv" : {
+        "titre" : "CV",
+        "dispo" : true,
+        "apercu" : "img/cv.jpg",
+        "description" : "Mon CV",
+        "langages" : "html5, css3",
+        "technos" : "responsivité, media queries"
+    },
+    "ladev" : {
+        "titre" : "LaDev",
+        "dispo" : true,
+        "apercu" : "static/img/screen.jpg",
+        "description" : "Plateforme regroupant des références et prises de notes utiles en tant que développeuse web",
+        "langages" : "html5, css3, php7",
+        "technos" : "gestion de fichiers en php, json"
+    },
+    "recettes" : {
+        "titre" : "Recettes",
+        "dispo" : true,
+        "apercu" : "ressources/img/screen.jpg",
+        "description" : "Mini-site servant de carnet de recettes collaboratif : possibilité de créer une session (via la page login.php) pour publier, éditer ou supprimer des recettes. Pas de bases de données, l'exercice portant sur la gestion de fichiers en php.",
+        "langages" : "html5, css3, php",
+        "technos" : "gestion de fichiers en php (lecture, écriture), JSON, système de sessions"
+    },
+    "calculatrice" : {
+        "titre" : "Calculatrice",
+        "dispo" : true,
+        "apercu" : "calculette.jpg",
+        "description" : "",
+        "langages" : "html5, css3",
+        "technos" : ""
+    },
+    "node-events" : {
+        "titre" : "Events",
+        "dispo" : true,
+        "apercu" : "",
+        "description" : "Un gestionnaire d'événements fait en collaboration avec Selma",
+        "langages" : "",
+        "technos" : "Node"
+    },
+    "todo-liste" : {
+        "titre" : "ToDo Liste (JS)",
+        "dispo" : true,
+        "apercu" : "screen.jpg",
+        "description" : "Une todo liste permettant de sauvegarder une liste de tâches en local suivant différentes catégories",
+        "langages" : "html5, CSS3, JavaScript",
+        "technos" : "LocalStorage"
+    }, 
+    "nounou-irene" : {
+        "titre" : "Nounou Irène",
+        "dispo" : true,
+        "apercu" : "screen.jpg",
+        "description" : "Projet en équipe pour concevoir un minisite sous Wordpress, d'aspect traditionnel, pour une nounou novice en informatique. Selon sa demande, nous avons choisi un hébergement et un nom de domaine, déployé Wordpress, installé le thème et les extensions nécessaires... Je me suis occupée aussi de développer des templates pour les articles et la page de présentation, avec des champs à remplir pour lui en faciliter l'usage.",
+        "langages" : "php",
+        "technos" : "Hébergement, Wordpress, templates", 
+		"lien" : "https://nounou-irene.000webhostapp.com/"
+    }
+    
+}
