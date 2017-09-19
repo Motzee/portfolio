@@ -24,7 +24,11 @@
 		</ul>
 	</nav>
 	<div><h1>Maelle LaLicorne</h1>
+<<<<<<< HEAD
 			<p id="intitule">Développeuse web back-end junior</p>
+=======
+			<p id="intitule">Développeuse web fullstack junior</p>
+>>>>>>> a6795027098886af08994b96f3185f643f18a678
 		</div>
 		<figure id="pict">
 			<img class="img-avatar recto" src="avatar.jpg" alt="avatar de LaLicorne" />
@@ -177,4 +181,8 @@ foreach($projets as $projet) {
 <script src="script.js"></script>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> a6795027098886af08994b96f3185f643f18a678
