@@ -24,11 +24,7 @@
 		</ul>
 	</nav>
 	<div><h1>Maelle LaLicorne</h1>
-<<<<<<< HEAD
 			<p id="intitule">Développeuse web back-end junior</p>
-=======
-			<p id="intitule">Développeuse web fullstack junior</p>
->>>>>>> a6795027098886af08994b96f3185f643f18a678
 		</div>
 		<figure id="pict">
 			<img class="img-avatar recto" src="avatar.jpg" alt="avatar de LaLicorne" />
@@ -101,7 +97,7 @@
 		$compteurClasse = 1 ;
 		foreach($projets as $projet) {
 			//si c'est un dossier et si ça ne commence pas par un point (synonyme de fichier caché)
-			if(is_dir($projet) && $projet[0] != '.'  && $projet != 'nbproject') {
+			if(is_dir($projet) && $projet[0] != '.'  && $projet != 'nbproject' && isset($listeProjets[$projet])) {
 				$titre = $listeProjets[$projet]['titre'] ;
 				$description = $listeProjets[$projet]['description'] ;
 				$apercu = $listeProjets[$projet]['apercu'] != null ? $projet."/".$listeProjets[$projet]['apercu'] : "vignette_default.jpg" ;
@@ -133,7 +129,7 @@
 	<?php
 $compteurID = 1 ;
 foreach($projets as $projet) {
-	if(is_dir($projet) && $projet != '.' && $projet != '..' && $listeProjets[$projet]['dispo'] == true && $projet != 'nbproject') {
+	if(isset($listeProjets[$projet]) && is_dir($projet) && $projet != '.' && $projet != '..' && $listeProjets[$projet]['dispo'] == true && $projet != 'nbproject') {
         
         $titre = $listeProjets[$projet]['titre'] ;
         $description = $listeProjets[$projet]['description'] ;
@@ -181,8 +177,4 @@ foreach($projets as $projet) {
 <script src="script.js"></script>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> a6795027098886af08994b96f3185f643f18a678
