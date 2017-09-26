@@ -63,7 +63,8 @@
 			<img class="notions" src="cv/img/jquery.png" alt="jQuery" title="notions de jQuery" />
 
 		<!--Frameworks-->
-			<img class="notions" src="cv/img/bootstrap.png" alt="Bootstrap" title="notions de Bootstrap (mais très honnêtement : je suis plus à l'aise avec les CSS brutes, que je maîtrise bien" />
+			<img class="notions" src="cv/img/symfony.png" alt="Symfony" title="utilisation de Symfony" />
+			<img class="notions" src="cv/img/bootstrap.png" alt="Bootstrap" title="notions de Bootstrap (mais très honnêtement : je suis plus à l'aise avec les CSS brutes, que je maîtrise bien)" />
 
 		<!--CMS-->
 			<img class="notions" src="cv/img/WordPress.png" alt="Wordpress" title="notions de Wordpress : création de site, d'utilisateurs, installation de thèmes et plugins. Création ou modification sommaire de templates de pages ou articles." />
